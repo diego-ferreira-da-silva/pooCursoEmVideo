@@ -1,35 +1,47 @@
 package com.github.diegofds92.Aula04;
 
-import javax.xml.transform.OutputKeys;
-
 public class Caneta {
-
     private String modelo;
     private float ponta;
+    private String cor;
+    public boolean tampada;
 
-    public String getModelo(){
-
-        return this.modelo;
-    }
-    public void setModelo(String m){
-
-        this.modelo = m;
-    }
-
-    public Float getPonta(){
-
-        return this.ponta;
-    }
-    public void setPonta(Float p){
-
-        this.ponta = p;
+    public Caneta(String modelo, String cor,float ponta) {
+        this.modelo = modelo;
+        this.ponta = ponta;
+        this.cor = cor;
     }
 
-    public void status(){
-        System.out.println("SOBRE A CANETA:");
-        System.out.println("Modelo: " + this.getModelo());
-        System.out.println("Ponta: " + this.getPonta());
 
+    public String getModelo() {
+        return modelo;
     }
 
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
+    }
+
+    public float getPonta() {
+        return ponta;
+    }
+
+    public void setPonta(float ponta) {
+        this.ponta = ponta;
+    }
+
+    public String getCor() {
+        return cor;
+    }
+
+    public void setCor(String cor) {
+        this.cor = cor;
+    }
+
+    public boolean isTampada() {
+        return tampada;
+    }
+
+    public void setTampada(boolean tampada) {
+        this.tampada = tampada;
+    }
 }
